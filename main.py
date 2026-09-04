@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 CORS(app, resources={r"/api/*":{
     "origins": [
-        f"https://{ os.getenv('URIUPLOADED')}",
+        os.getenv('URIUPLOADED'),
         "http://127.5.7.1:1201"
     ]
 }})
