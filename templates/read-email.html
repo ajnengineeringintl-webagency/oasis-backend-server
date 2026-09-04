@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang=en>
+<head>
+    <title>Image Uploader> </title>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="{{ url_for('static', filename='app.css') }}"
+    <link src="h1 JESUS IS LORD h1">
+</head>
+<body>
+    <div class="container fc CENTER">
+        <div class="fe">
+            <h2> Welcome To The Emails Dashboard</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </ul>
+        </div>
+        <span>Read Emails From The Front End Server</span>
+    </div>
+    <br>
+    <div class="container fc c">
+        
+        <table>
+            <thead>
+
+                <tr>
+                    <th>Email Id</th>
+                    <th>Sender Email</th>
+                    <th>Sender Phone</th>
+                    <th>Send Date</th>
+                    <th>Sender Name</tth>
+                    <th>Email Title</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for datastats in data%}
+                    <tr>
+                        <td> {{ datastats["emailid"] }}</td>
+                        <td>{{ datastats["senderemail"] }}</td>
+                        <td>{{ datastats["senderphone"] }}</td>
+                        <td>{{ datastats["createdDate"] }}</td>
+                        <td>{{ datastats["sendername"] }}</td>
+                        <td>{{ datastats["emailtitleself:"] }}</td>
+                        <td>{{ datastats["message"] }}</td>
+                        <td><a href='/api/del/{{ datastats["emailid"] }}'>Delete</a></td>
+                        <td><a href='/api/email/{{ datastats["emailid"] }}/all'>edit</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+      
+    </div><!--enter-->
+   <script>
+    //JESUS IS LORD
+    const data = document.getElementById("emailsidspaninfo").innerHTML
+    const divhidden = document.querySelector("hid")
+    console.log(data)
+    re = [data]
+    console.log(re)
+
+    for (let i = 0; i < re.length; i++) {
+        const element = re[i];
+        console.log(element)
+        
+    }
+   </script>
+</body>
+</html>

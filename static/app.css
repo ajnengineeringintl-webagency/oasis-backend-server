@@ -1,0 +1,112 @@
+/* JESUS IS LORD */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font: 16px "san-serif", system-ui;
+    color: #fff;
+    background: linear-gradient(-140deg, rgb(108, 108, 255),rgb(71, 1, 146)) no-repeat center;
+    min-height:100vh;
+    display: flexbox;
+}
+:root{
+    --main: rgba(155,145,27);
+    --primary: rgba(177,25,185);
+    --font-large:600 24px "san-serif", system-ui;
+    --font-small: 9px;
+    --transition-animation: all ease .4s;
+    --text-light:#e9dfdf;
+    --text-dark:#333;
+    --text:#000;
+    --white:rgba(255,255,255,1);
+    --background: linear-gradient(-140deg, rgba(140,140,255),rgba(255,255,50)) no-repeat center;
+
+}
+.flex{transition: var(--transition-animation);}
+h2{font:var(--font-large)}
+p,span{font-size:16px;
+    color: var(--text-light);}
+img{width:100%}
+li{list-style:none}
+a{text-decoration: none;}
+.container{
+    width:1240px;
+    margin-inline:auto;
+}
+.fe{
+    display: flex;
+    gap: 15px;
+}
+.fc{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.center{ 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.fe ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-left:auto;
+    color: var(--white);
+}
+.fe ul li a{
+    color: var(--white);
+    font-weight: 600;
+}
+.fe ul li a:hover{
+    color: var(--text-light);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-animation);
+}
+table{
+    width:100%;
+    /*min-height:80vh; */
+    background: var(--white);
+    padding:14px;
+    color: var(--text-dark);
+    text-align: left;
+}
+table thead{
+    background: var(--primary);
+    padding:4px;
+    font:700 16px "san-serif",system-ui;
+}table tbody{
+    align-self: start;
+    align-content: start;
+    max-width:100%;
+}
+table tbody tr:nth-child(even){
+    background: var(--main);
+}FORM{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    background:var(--white);
+    border-radius: 14px;
+    color: var(--text-dark);
+    padding: 25px 15px;
+    gap:24px;
+    align-self:center;
+}form input{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:var(--text-light);
+    border-bottom: 2px solid var(--text-dark) !important;
+    
+}form input[type="submit"]{
+    color:var(--white);
+    cursor: pointer;
+    background: var(--primary);
+    font: 700 17px "san-serif",system-ui;
+}
+ 

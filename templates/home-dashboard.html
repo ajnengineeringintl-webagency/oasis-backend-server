@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang=en>
+<head>
+    <title>Image Uploader> </title>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+    <div class="container fc ">
+         <div class="fe">
+            <h2> Welcome To The Emails Dashboard</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </ul>
+        </div>
+
+    <h1> JESUS IS LORD </h1>
+    <h2> Upload Emgaile Here:</h2>
+    <form enctype="application/json" action="/api/send-mail" method="post">
+        <label for="file">Upload Enter Details</label>
+        <input id="text" type="text" name="title">
+        <input id="text" type="text" name="name">
+        <input id="email" type="email" name="email">
+        <input id="text" type="tel" name="se">
+        <input id="text" type="tel" name="">
+        <input id="text" type="text" name="message">
+        <input type="submit" value="click">
+    </form>
+    </div>
+</body>
+</html>
